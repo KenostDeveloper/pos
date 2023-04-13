@@ -1,0 +1,374 @@
+
+.modalScrin{
+  display: none;
+}
+
+.modalScrin.active{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalScrinRegister{
+  display: none;
+}
+
+.modalScrinRegister.active{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.modalWindow{
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modalWindowHead{
+    font-family: 'Nasalization';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.form-floating{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.form-control{
+    padding: 12px;
+    padding-left: 40px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    transition: all .15s;
+    outline:none;
+
+    
+    font-family: 'Nasalization';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+
+    color: #797979;
+
+    resize: none;
+}
+
+.mb{
+    margin-bottom: 16px;
+}
+
+.form-floating label{
+    font-family: 'Nasalization';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+}
+
+.form-floating-img{
+    width: 20px;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
+.form-floating-img-pasword{
+    width: 23px;
+    position: absolute;
+    right: 14px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.forgot-pasword{
+    margin: 18px 0;
+    width: 90%;
+    margin: auto;
+    text-align: right;
+}
+
+.forgot-pasword a{
+    font-family: 'Nasalization';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.auth-form{
+    position: relative;
+    
+}
+
+.form-button{
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+    border-radius: 10px;
+    border: none;
+    height: 60px;
+    font-family: 'Nasalization';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    color: #FFFFFF;
+    width: 100%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.form-button:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.form-button a{
+    width: 100%;
+}
+
+.form-button-a-cont{
+    width: 90%;
+    margin: auto;
+    margin-top: 19px;
+}
+
+.form-text-who{
+    font-family: 'Nasalization';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    margin-top: 19px;
+}
+
+.form-text-who a{
+    text-decoration: none;
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    cursor: pointer;
+}
+
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    margin-top: 9px;
+  }
+
+  .toggleCeneter{
+    width: 90%;
+    margin: auto;
+  }
+  
+  .toggle-switch {
+    display: inline-block;
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+    border-radius: 16px;
+    width: 55px;
+    height: 26px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+  }
+  .toggle-switch:before, .toggle-switch:after {
+    content: "";
+  }
+  .toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    transition: left 0.25s;
+  }
+  .toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  }
+
+  .toggle-checkbox:checked + .toggle-switch {
+    background: linear-gradient(91.94deg, #FF7B01 3.09%, #FF6F6F 139.14%);
+  }
+
+  .toggle-checkbox:checked + .toggle-switch:before {
+    left: 30px;
+  }
+  
+  .toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .toggle-label {
+    font-family: 'Nasalization';
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+
+    color: #797979;
+  }
+
+.form-floating-label{
+    font-family: 'Nasalization';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+    width: 90%;
+    margin: auto;
+}
+
+.modalUserProfile{
+  display: none;
+}
+
+.modalUserProfile.active{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, .6); */
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+}
+
+.modalUserProfileWindow{
+  width: 350px;
+  padding: 30px;
+  background: #FFFFFF;
+  margin-top: 100px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.modalUserProfile .container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.modalUserProfileWindowInfoAvatar{
+  background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 16px;
+
+}
+
+.modalUserProfileWindowInfo{
+  display: flex;
+  align-items: center;
+
+}
+
+.modalUserProfileWindowInfoOne{
+  display: flex;
+  align-items: center;
+  color: #ff6f6f;
+  font-size: 20px;
+  position: relative;
+  top: 80px;
+  /* right: 0; */
+  justify-content: flex-end;
+}
+
+.modalUserProfileWindowInfoListName{
+  font-size: 20px;
+}
+
+.modalUserProfileWindowInfoListMail{
+  font-size: 14px;
+  /* color: #797979; */
+  margin: 3px 0;
+}
+
+.modalUserProfileWindowInfoListEditProfile{
+  font-size: 10px;
+  background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.modalUserProfileWindowInfoListEditProfile img{
+  height: 14px;
+  margin-right: 6px;
+}
+
+.roleProfile{
+  font-size: 16px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.modalUserProfileWindowButton{
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.modalUserProfileWindowButton button{
+  border: 1px solid #0000003d;
+  border-radius: 10px;
+  width: 100%;
+  color: rgba(70, 59, 59, 0.93);
+  background-color: transparent;
+  height: 100%;
+  cursor: pointer;
+}

@@ -1,0 +1,543 @@
+.modalCreatingAservice {
+  display: none;
+}
+
+.modalCreatingAservice.active {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+
+.modalCreatingAserviceWindow {
+  min-width: 650px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modalCreatingAserviceWindow .form-floating {
+  width: 100%;
+}
+
+.modalCreatingAserviceWindowInfo {
+  display: flex;
+  margin-top: 6px;
+}
+
+.modalCreatingAserviceWindowInfoItem {
+  border: 1px solid #d1d1d1;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.inputData {
+  border: none;
+  outline: none;
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+}
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #000;
+  text-align: center;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  line-height: 22px;
+  height: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 0;
+  transition: background-color 0.2s;
+}
+.input-file input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* Focus */
+.input-file input[type="file"]:focus + span {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Disabled */
+.input-file input[type="file"]:disabled + span {
+  background-color: #eee;
+}
+
+.form-control.butjet {
+  width: 200px !important;
+}
+
+.form-container-two {
+  display: flex;
+  width: 100%;
+}
+
+#standard-select {
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  transition: all 0.15s;
+  outline: none;
+  font-family: "Nasalization";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 19px;
+  color: #797979;
+  resize: none;
+}
+
+.form-floating.butjet {
+  margin: 0 !important;
+  width: 40%;
+}
+
+.form-floating.butjetOne {
+  width: 40%;
+  margin: 0 0 10px 0;
+}
+
+.userInfoModalLeftAvatar {
+  background: linear-gradient(91.94deg, #ff6f6f 3.09%, #ff7b01 139.14%);
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.userInfoModal {
+  border-top: 1px solid #7c7c7ccd;
+  border-bottom: 1px solid #7c7c7ccd;
+  margin: 15px 0 10px 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.InfoBlockModalCreate {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+  color: #bcbcbc;
+}
+
+.modalCreatingAserviceWindowBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalCreatingAserviceWindowBottomCatigoryModal {
+  cursor: pointer;
+}
+
+.modalCreatingAserviceWindowBottom button {
+  background: linear-gradient(91.94deg, #ff6f6f 3.09%, #ff7b01 139.14%);
+  border-radius: 9.9625px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 14px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.p0 {
+  padding-left: 12px !important;
+}
+
+.modalreateAserviceActiveButton {
+  background: linear-gradient(91.94deg, #ff6f6f 3.09%, #ff7b01 139.14%);
+  border-radius: 9.9625px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 14px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sectionCreatingAservice {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionCreatingAservice .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionCreatingAservice h6{
+  display: block;
+  font-size: 47px;
+  margin: 0;
+  line-height: 98px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.modalCatigories {
+  display: none;
+}
+
+.modalCatigories.active {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99990;
+  top: 0;
+}
+
+.modalCatigoriesWindow {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modalCatigoriesWindowContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  height: 300px;
+}
+
+.modalCatigoriesWindowRight::-webkit-scrollbar {
+  width: 4px;
+  background-color: #cfcfcf;
+}
+
+.modalCatigoriesWindowLeft::-webkit-scrollbar {
+  width: 4px;
+  background-color: #cfcfcf;
+}
+
+.modalCatigoriesWindow h6{
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.modalCatigoriesWindowLeft {
+  width: 48%;
+  height: 100%;
+  overflow-y: auto;
+  width: 48%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modalCatigoriesWindowRight {
+  width: 48%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modalCatigoriesWindowLeft a{
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 19px;
+  color: #515151;
+}
+
+.modalCatigoriesWindowRight a{
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 19px;
+  color: #1a1a1a;
+}
+
+
+.sectionCreatingAservice{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: calc(100vh - 160px);
+}
+
+.NotZakazCard{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.NotZakazCard-card{
+  width: 30%;
+}
+
+.NotZakaz h6{
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-size: 22px;
+}
+
+.NotZakazCard-card img{
+  width: 100%;
+}
+
+.modalreateAserviceActiveButton {
+  background: linear-gradient(91.94deg, #ff6f6f 3.09%, #ff7b01 139.14%);
+  border-radius: 9.9625px;
+  padding: 20px 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 14px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 40px auto;
+  display: block;
+}
+
+.NotZakazCard-card p{
+  text-align: center;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+
+.MyOrder{
+  background: #FFFFFF;
+  border: 1px solid #747474;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 0 1px rgba(13,35,67,.07),0 5px 15px -8px rgba(13,35,67,.4);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.MyOrderHeaderTitle{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #2D2D2D;
+}
+
+.MyOrderHeaderinfo{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  color: #000000;
+}
+
+.MyOrderHeaderinfo span{
+  margin-right: 10px;
+}
+
+.MyOrderHeaderSaleCell{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  gap: 5px;
+}
+
+.MyOrderHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MyOrderHeaderSaleEdinit{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+
+  color: #888888;
+}
+
+.MyOrderDescription{
+  border-top: 1px solid #7E7E7E;
+  border-bottom: 1px solid #7E7E7E;
+  margin: 10px 0;
+}
+
+.MyOrderDescriptionPadding{
+  padding: 10px 0;
+}
+
+.MyOrderDescriptionPadding p{
+  width: 60%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #303030;
+}
+
+.MyOrderBottomLeftAvatar{
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+  font-size: 25px;
+  border-radius: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.MyOrderBottomLeftAvatarName{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+.MyOrderBottomLeft{
+  display: flex;
+  align-items: center;
+}
+
+.MyOrderBottomLeftTelephone{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #5c5c5c;
+  margin-top: 5px;
+}
+
+.MyOrderBottomOtclick{
+  background: linear-gradient(91.94deg, #ff6f6f 3.09%, #ff7b01 139.14%);
+  border-radius: 9.9625px;
+  margin: 10px 0 15px 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px;
+  height: 46px;
+}
+
+.MyOrderBottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.OrdersAllUsers:nth-child(n){
+  margin-bottom: 60px;
+}
+
+.userVid{
+  display: flex;
+}
+
+.userVidAvatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 128px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.userVidContainer{
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.userVidInfo p:nth-child(2){
+  color: #3b3b3b;
+}
+
+.countOtclick{
+  font-size: 20px;
+    font-weight: 500;
+}
+
+.MyOrder button{
+  background: linear-gradient(91.94deg, #f4865b 3.09%, #ff1d01 139.14%);
+    border-radius: 9.9625px;
+    margin: 10px 0 0px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    padding: 10px 20px;
+    height: 34px;
+}

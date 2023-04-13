@@ -1,0 +1,45 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-wrapper {
+    width: 550px;
+    height: 900px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+}
+
+section {
+    position: absolute;
+    width: 500px;
+    height: 800px;
+}
+
+.photo {
+    position: absolute;
+}
+
+.effect {
+    width: 0%;
+    overflow: hidden;
+    transition: 2s;
+}
+
+section:hover .effect {
+    width: 100%;
+}
+
+.wh-img {
+    width: 500px;
+}
+
+.n-date, .name, .desc {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.h-name, .h-desc, .h-date {
+    font-size: 18px;
+}

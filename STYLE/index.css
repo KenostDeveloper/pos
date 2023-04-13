@@ -1,0 +1,504 @@
+nav{
+    width: 100%;
+    height: 160px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper{
+    height: 570px;
+}
+
+
+
+
+.logo{
+    height: 113px;
+    width: 214px;
+    background-image: url(../IMG/POS.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.nav-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+.nav-text>div,
+.nav-text>a{
+    margin-left: 80px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+.mainSection{
+    width: 100%;
+    padding-top: 20px;
+    /* Удалить */
+    height: 800px; 
+    /* Удалить */
+    display: flex;
+    justify-content: center;
+}
+
+.mainSection .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainSectionLeft{
+    width: 45%;
+}
+
+.mainSectionRight{
+    width: 45%;
+}
+
+.mainSectionRightText{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    color: #303030;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.mainSectionRightButtons1{
+    width: 281px;
+    height: 75px;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(84.91deg, #FF6F6F -0.19%, #FF7B01 98.79%);
+    border: none;
+}
+
+.mainSectionRightButtons2{
+    width: 211px;
+    height: 75px;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(35.49deg, #0066FF -0.15%, #00FF66 76.43%);
+    border: none;
+}
+
+.mainSectionRightButtons span{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    padding: 0 32px;
+}
+
+.mainSectionRightButtons{
+    display: flex;
+    align-items: center;
+}
+
+.mainSectionRightText span{
+    position: relative;
+}
+
+.mainSectionRightText span::after{
+    content: "";
+    position: absolute;
+    left: -3%;
+    bottom: 0;
+    z-index: -1;
+    width: 106%;
+    height: 30px;
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+    animation: animPolos 1s normal forwards ease-in-out;
+    transition: all 2s;
+}
+
+.mainSectionRightText span:nth-child(2):after{
+    animation: animPolos 2s normal forwards ease-in-out;
+    transition: all 2s;
+}
+
+@keyframes animPolos {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 106%;
+    }
+}
+
+.country{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+.country img{
+    margin-right: 19px;
+}
+
+.swiper-two{
+    height: 350px;
+    width: 1300px;
+}
+
+.twoSection{
+    display: flex;
+    justify-content: center;
+}
+
+.twoSection-card-container{
+    width: 237.26px;
+    height: 342.71px;
+
+    background: linear-gradient(91.94deg, #ff6f6f8f 3.09%, #FF7B018f 139.14%);
+    border-radius: 26px;
+}
+
+.error-php {
+    font-family: 'Nasalization';
+    color: red;
+}
+
+.nav-user-icon{
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.twoSection .container{
+    position: relative;
+}
+
+
+.swiper-button-next{
+    right: -40px !important;
+    top: 65% !important;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+.swiper-button-prev{
+    left: -40px !important;
+    top: 65% !important;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: #FF6F6F;
+}
+
+.twoSection{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.OrdersAllUsers{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.OrdersAllUsers{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    /* align-items: center; */
+    min-height: calc(100vh - 160px);
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.twoSection h6{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.sectionCreatingAservice h6{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    /* justify-content: center; */
+    margin-bottom: 50px;
+}
+
+.twoSection-card-container{
+    width: 237.26px;
+    height: 342.71px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 26px;
+    position: relative;
+    cursor: pointer;
+}
+
+.twoSection-card-container-button{
+    height: 60px;
+    width: 90%;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
+    bottom: 20px;
+    justify-content: center;
+    transition: all .1s, transform 0.5s;
+}
+
+.twoSection-card:hover .twoSection-card-container-button{
+    color: #fff;
+    transition: all .1s, transform 0.5s;
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+    transform: translate(-50%, 0) scale(1.01)
+}
+
+.error {
+    color: #FF6F6F;
+}
+
+
+.helpSection{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.WhySection{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.TheeSwiper{
+    height: 785px;
+}
+
+.WhySectionImg{
+    margin: auto;
+    display: block;
+}
+
+.WhySectionInfo{
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+    border-radius: 20px;
+    width: 670px;
+    padding: 58px 66px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    margin: auto;
+    position: relative;
+    bottom: 150px;
+    left: 200px;
+}
+
+.helpSection .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.helpSectionBlock{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    width: 500px;
+    height: 100%;
+    position: relative;
+}
+
+.helpSectionBlock::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: -10px;
+    background: linear-gradient(91.94deg, #FF6F6F 3.09%, #FF7B01 139.14%);
+}
+
+.carusel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+.WhySectionImgPos{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.caruselBox{
+    height: 665px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.caruselBox img{
+    animation: animateImgAnim linear 10s infinite;
+}
+
+@keyframes animateImgAnim{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-65.7%) translateY(15px);
+    }
+}
+
+.carusel h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    color: #000000;
+}
+
+.leftShadow{
+    width: 60px;
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(85.67deg, #FFFFFF 8.81%, rgba(255, 255, 255, 0.5) 48.28%, rgba(170, 170, 170, 0) 80.51%);
+}
+
+.rightShadow{
+    width: 60px;
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(85.67deg, rgba(170, 170, 170, 0) 5.58%, rgba(255, 255, 255, 0.5) 43.85%, #FFFFFF 82.93%);
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBlock{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBlock a{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #303030;
+    margin-bottom: 30px;
+}
